@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomeScreen(),
+      // routes: {WebArticeView.routeName:(ctx)=>WebArticeView(articleUrl: null)},
     );
   }
 }

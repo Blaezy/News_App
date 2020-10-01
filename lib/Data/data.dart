@@ -3,7 +3,7 @@ import 'package:news_app/Models/CategoryModel.dart';
 List<CategoryModel> getCategoryModel() {
   List<CategoryModel> categoryList = new List<CategoryModel>();
   CategoryModel category1 = new CategoryModel();
-  category1.categoryName = "Bussiness";
+  category1.categoryName = "Business";
   category1.url =
       "https://images.unsplash.com/photo-1538582709238-0a503bd5ae04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80";
   categoryList.add(category1);
@@ -27,13 +27,13 @@ List<CategoryModel> getCategoryModel() {
   categoryList.add(category4);
 
   CategoryModel category5 = new CategoryModel();
-  category5.categoryName = "Science";
+  category5.categoryName = "science";
   category5.url =
       "https://images.unsplash.com/photo-1576319155264-99536e0be1ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80";
   categoryList.add(category5);
 
   CategoryModel category6 = new CategoryModel();
-  category6.categoryName = "Sport";
+  category6.categoryName = "Sports";
   category6.url =
       "https://images.unsplash.com/photo-1552667466-07770ae110d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80";
   categoryList.add(category6);

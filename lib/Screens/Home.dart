@@ -18,7 +18,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getNews();
     categories = getCategoryModel();
@@ -75,13 +74,16 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding: EdgeInsets.symmetric(horizontal: 5),
                       child: ListView.builder(
                           shrinkWrap: true,
+                          physics: ClampingScrollPhysics(),
                           itemCount: newsList.length,
                           itemBuilder: (context, index) {
-                            print(newsList.length);
+                            // print(newsList.length);
                             return BlogTile(
-                                imageURL: newsList[index].urlToImage,
-                                title: newsList[index].title,
-                                description: newsList[index].desc);
+                              imageURL: newsList[index].urlToImage,
+                              title: newsList[index].title,
+                              description: newsList[index].desc,
+                              url: newsList[index].url,
+                            );
                           }),
                     ),
                   )

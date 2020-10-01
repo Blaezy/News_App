@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:news_app/Screens/CategoryScreen.dart';
 
 class CategoryTile extends StatelessWidget {
   final String categoryName;
@@ -8,7 +9,13 @@ class CategoryTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) =>
+                    CategoryNews(categoryName.toLowerCase())));
+      },
       child: Container(
         margin: EdgeInsets.only(right: 14),
         child: Stack(
